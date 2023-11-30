@@ -5,7 +5,7 @@ import Html from '../assets/html.png'
 import Css from '../assets/css.png'
 import Js from '../assets/js.png'
 import React from '../assets/react.png'
-import Sass from '../assets/Sass.png'
+import Sass from '../assets/sass.png'
 import Figma from '../assets/figma.png'
 import Styled from '../assets/styled-components.png'
 
