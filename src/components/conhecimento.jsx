@@ -9,6 +9,8 @@ import Sass from '../assets/Sass.png'
 import Figma from '../assets/figma.png'
 import Styled from '../assets/styled-components.png'
 
+import {Fade} from 'react-awesome-reveal'
+
 
 export default function Conhecimento() {
 
@@ -53,20 +55,22 @@ export default function Conhecimento() {
     return (
         <section className="conhecimento">
             <article>
+                <Fade cascade direction="up" duration={500} damping={.25} triggerOnce fraction={.1}>
                 <h2>
                     Tecnologias e Ferramentas
                 </h2>
                 <p>
                     Saiba todas as tecnologias e ferramentas nas quais eu tenho conhecimento!
                 </p>
-                <div className='area-cards'>
-                        {cards.map((e) => (
-                            <div>
-                                <img src={e.imagem} alt="" />   
-                                <h3>{e.nome}</h3>
-                            </div>
-                        ))}
-                </div>
+                    <div className='area-cards'>
+                            {cards.map((e) => (
+                                <div className="card">
+                                    <img src={e.imagem} alt="" />   
+                                    <h3>{e.nome}</h3>
+                                </div>
+                            ))}
+                    </div>
+                </Fade>
             </article>
         </section>
     )

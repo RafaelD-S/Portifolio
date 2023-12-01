@@ -61,29 +61,32 @@ export default function Header() {
                         Currículo
                     </a>
                 </div>
-                <button onClick={() => SetMudar(!mudar)}>
+                <button onClick={(e) => {
+                    SetMudar(!mudar) 
+                    e.target.innerHTML === '≡' ? e.target.innerHTML = 'X' : e.target.innerHTML = '≡'
+                }}>
                     ≡
                 </button>
             </section>
-        {mudar && <Navegacao/>}
+        {mudar && <Navegacao SetMudar={SetMudar} mudar={mudar}/>}
         </HeaderEstilo>
     </>
     )
 }
-function Navegacao(fecharGaveta) {
+function Navegacao({SetMudar, mudar}) {
     return (
         <nav className='gaveta-navegacao'>
             <ul>
-                <li>
+                <li onClick={() => SetMudar(!mudar)}>
                     Sobre
                 </li>
-                <li>
+                <li onClick={() => SetMudar(!mudar)}>
                     Conhecimento
                 </li>
-                <li>
+                <li onClick={() => SetMudar(!mudar)}>
                     Projetos
                 </li>
-                <li>
+                <li onClick={() => SetMudar(!mudar)}>
                     Contato
                 </li>
             </ul>

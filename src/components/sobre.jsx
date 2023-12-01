@@ -1,9 +1,11 @@
 import Programador from '../assets/coder.png'
+import {Fade} from 'react-awesome-reveal'
 
 export default function Sobre() {
     return (
         <section className="sobre"  id='cu'> 
             <article>
+            <Fade direction='left' fraction={.6} triggerOnce>
                 <div>
                     <h2>
                         Quem eu sou?
@@ -15,9 +17,12 @@ export default function Sobre() {
                     Sou bastante comunicativo e social, tenho boas capacidades de trabalho em equipe e liderança, sempre disposto a conhecer novas pessoas, novos ambientes e novas tecnologias, amo utilizar da minha criatividade em meus projetos e meu amor pela programação começou desde que aprendi HTML pela primeira vês, e me motiva a aprender mais e mais todos os dias.
                     </p>
                 </div>
+            </Fade>
+            <Fade direction='right' fraction={.6} triggerOnce>
                 <figure>
                     <img src={Programador} alt="" />
                 </figure>
+            </Fade>
             </article>
             <div className="linha">
             </div>
