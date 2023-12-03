@@ -16,46 +16,52 @@ export default function Projetos() {
             imagem: Naruto,
             alt: 'Site usando a API do Naruto',
             github: 'https://github.com/RafaelD-S/Naruto-API',
-            deploy: 'https://naruto-api-alpha.vercel.app'
+            deploy: 'https://naruto-api-alpha.vercel.app',
+            tecnologias: 'React | Sass | Axios | React-Router-Dom'
         },
         {
             nome: 'Calculadora React',
             imagem: Calculadora,
             alt: 'Site de uma calculadora utilizando React',
             github: 'https://github.com/RafaelD-S/Calculadora-React',
-            deploy: 'https://calculadora-simples-nu.vercel.app'
+            deploy: 'https://calculadora-simples-nu.vercel.app',
+            tecnologias: 'React | Styled-Components'
         },
         {
             nome: 'Projeto RPG',
             imagem: Rpg,
             alt: 'Site de RPG feito em html, css e js',
             github: 'https://github.com/RafaelD-S/RPG-Project',
-            deploy: 'https://rafaeld-s.github.io/RPG-Project/'
+            deploy: 'https://rafaeld-s.github.io/RPG-Project/',
+            tecnologias: 'HTML | CSS | JavaScript'
         },
         {
             nome: 'Contador Multicor',
             imagem: Contador,
             alt: 'Contador de 1 a 10 feito em React',
             github: 'https://github.com/RafaelD-S/Contador-Multicor',
-            deploy: 'https://contador-multicor.vercel.app'
+            deploy: 'https://contador-multicor.vercel.app',
+            tecnologias: 'React | CSS'
         },
         {
             nome: 'Desafio Fantastika',
             imagem: Fantastika,
             alt: 'Site desafio do curso front-end Vai na Web',
             github: 'https://github.com/RafaelD-S/Fantastika',
-            deploy: 'https://rafaeld-s.github.io/Fantastika/'
+            deploy: 'https://rafaeld-s.github.io/Fantastika/',
+            tecnologias: 'HTML | CSS'
         },
         {
             nome: 'Blogames',
             imagem: Blogames,
             alt: 'Site parte dos templates desenvolvidos pela Codêlandia',
             github: 'https://github.com/RafaelD-S/Blogames',
-            deploy: 'https://rafaeld-s.github.io/Blogames/'
+            deploy: 'https://rafaeld-s.github.io/Blogames/',
+            tecnologias: 'HTML | CSS'
         },
     ])
     return (
-        <section className="projetos-section">
+        <section className="projetos-section" id='projetos'>
             <article>
             <h2>
                 Projetos
@@ -67,9 +73,14 @@ export default function Projetos() {
             <div className="projetos-cards-area">
                 {projetos.map((e) => (
                     <div className="projetos">
-                        <figure>
-                            <img src={e.imagem} alt={e.alt} />
-                        </figure>
+                        <a href={e.deploy} target='blank_'>
+                            <figure>    
+                                <img src={e.imagem} alt={e.alt} />
+                            <figcaption className='tecnologias'>
+                                {e.tecnologias}
+                            </figcaption>
+                            </figure>
+                        </a>
                         <div className='projetos-text-area'>
                             <h3>
                                 {e.nome}

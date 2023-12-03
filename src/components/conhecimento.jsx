@@ -53,7 +53,7 @@ export default function Conhecimento() {
         }
     ])
     return (
-        <section className="conhecimento">
+        <section className="conhecimento" id="conhecimento">
             <article>
                 <Fade cascade direction="up" duration={500} damping={.25} triggerOnce fraction={.1}>
                 <h2>

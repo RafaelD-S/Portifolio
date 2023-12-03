@@ -3,7 +3,7 @@ import {Fade} from 'react-awesome-reveal'
 
 export default function Sobre() {
     return (
-        <section className="sobre"> 
+        <section className="sobre" id='sobre'> 
             <article>
             <Fade direction='left' fraction={.6} triggerOnce>
                 <div>

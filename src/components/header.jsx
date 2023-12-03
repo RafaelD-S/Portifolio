@@ -1,6 +1,9 @@
 import {createGlobalStyle, styled} from 'styled-components'
 import Pt from '../assets/brasil.png'
 import Eng from '../assets/estados-unidos.png'
+import GitHub from '../assets/github.png'
+import Linkedin from '../assets/linkedin.png'
+import Instagram from '../assets/instagram.png'
 import { useState } from 'react'
 
 const GlobalStyle = createGlobalStyle`
@@ -32,39 +35,44 @@ export default function Header() {
         <HeaderEstilo>
             <section className='header-container'>
                 <div>
-                    <h2>
+                    <h2 onClick={() => window.scrollTo({top:0})}>
                         &lt; Rafael D-S <span>/</span>&gt;
                     </h2>
                 </div>
                 <nav className='navegacao'>
                     <ul>
-                        <li>
-                            Sobre
-                        </li>
-                        <li>
-                            Conhecimento
-                        </li>
-                        <li>
-                            Projetos
-                        </li>
-                        <li>
-                            Contato
-                        </li>
+                        <a href="#sobre">
+                            <li>
+                                Sobre
+                            </li>
+                        </a>
+                        <a href="#conhecimento">
+                            <li>
+                                Conhecimento
+                            </li>
+                        </a>
+                        <a href="#projetos">
+                            <li>
+                                Projetos
+                            </li>
+                        </a>
+                        <a href="#contato">
+                            <li>
+                                Contato
+                            </li>
+                        </a>
                     </ul>
                 </nav>
                 <div>
                     <figure>
-                        <img src={Pt} alt="" />
-                        <img src={Eng} alt="" />
+                        <img src={Pt} alt="português" />
+                        <img src={Eng} alt="english" />
                     </figure>
-                    <a href="">
+                    <a href="../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
                         Currículo
                     </a>
                 </div>
-                <button onClick={(e) => {
-                    SetMudar(!mudar) 
-                    e.target.innerHTML === '≡' ? e.target.innerHTML = 'X' : e.target.innerHTML = '≡'
-                }}>
+                <button onClick={() => SetMudar(!mudar) }>
                     ≡
                 </button>
             </section>
@@ -74,30 +82,51 @@ export default function Header() {
     )
 }
 function Navegacao({SetMudar, mudar}) {
+
+    // onClick={() => SetMudar(!mudar)}
     return (
         <nav className='gaveta-navegacao'>
-            <ul>
-                <li onClick={() => SetMudar(!mudar)}>
-                    Sobre
-                </li>
-                <li onClick={() => SetMudar(!mudar)}>
-                    Conhecimento
-                </li>
-                <li onClick={() => SetMudar(!mudar)}>
-                    Projetos
-                </li>
-                <li onClick={() => SetMudar(!mudar)}>
-                    Contato
-                </li>
-            </ul>
+                    <ul>
+                        <a href="#sobre" onClick={() => SetMudar(!mudar)}>
+                            <li>
+                                Sobre
+                            </li>
+                        </a>
+                        <a href="#conhecimento" onClick={() => SetMudar(!mudar)}>
+                            <li>
+                                Conhecimento
+                            </li>
+                        </a>
+                        <a href="#projetos" onClick={() => SetMudar(!mudar)}>
+                            <li>
+                                Projetos
+                            </li>
+                        </a>
+                        <a href="#contato" onClick={() => SetMudar(!mudar)}>
+                            <li>
+                                Contato
+                            </li>
+                        </a>
+                    </ul>
             <section>
                 <figure>
-                    <img src={Pt} alt="" />
-                    <img src={Eng} alt="" />
+                        <img src={Pt} alt="português" />
+                        <img src={Eng} alt="english" />
                 </figure>
-                <a href="">
+                <a a href="../../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
                     Curriculo
                 </a>
+                <figure className='separar'>
+                    <a href="https://github.com/RafaelD-S" target='_blank'>
+                        <img src={GitHub} alt="github" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/rafaeld-s/" target='_blank'>
+                        <img src={Linkedin} alt="linkedin" />
+                    </a>
+                    <a href="https://www.instagram.com/skellybur/" target='blank_'>
+                        <img src={Instagram} alt="instagram" />
+                    </a>
+                </figure>
             </section>
         </nav>
     )
