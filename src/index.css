@@ -374,14 +374,13 @@ main figure {
   font-weight: bold;
   left: 0;
   right: 0;
-  top: 100%;
-  z-index: +4;
+  bottom: -20%;
   padding: .5rem;
-  transition: top .2s ease;
+  transition: bottom .2s ease;
   letter-spacing: 1px;
 }
 .projetos figure:hover .tecnologias {
-  top: 87%;
+  bottom: 0;
 }
 /* --------------------- */
 
@@ -478,7 +477,7 @@ footer figure img:hover {
   }
   /* ---------------- */
   .tecnologias {
-    top: 80%;
+    bottom: 0;
   }
   figcaption {
     font-size: .9rem;
