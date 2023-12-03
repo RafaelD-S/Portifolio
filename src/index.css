@@ -11,101 +11,6 @@
   gap: 0 20px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-header {
-  background-color: #fff;
-  margin: 1rem;
-  border-radius: 28px;
-  position: fixed;
-  padding: 0 1.75rem;
-  box-shadow: 0 0 3px #212529;
-  left: 0;
-  right: 0;
-  z-index: +2;
-  font-weight: 600;
-}
-.header-container {
-  height: 11vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-h2 {
-  font-size: 1.85rem;
-}
-header h2 {
-  cursor: pointer;
-}
-header h2 span {
-  color: rgb(255, 140, 0);
-  transition: padding .1s ease;
-}
-header div:nth-child(3) {
-  justify-content: end;
-  display: flex;
-  align-items: center;
-}
-header figure {
-  display: flex;
-  width: 5rem;
-  justify-content: space-around;
-  padding-right: .5rem;
-}
-header img:hover, main article figure img:hover {
-  transform: translate(0, -2px);
-  cursor: pointer;
-}
-header .curriculo {
-  background-color: #FF8c00;
-  border-radius: 50px;
-  color: #fff;
-  padding: .65rem 1.25rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.navegacao ul {
-  display: flex;
-  list-style: none;
-}
-.navegacao ul li {
-  padding: .65rem 1.25rem;
-  cursor: pointer;
-  transition: background-color .1s ease, border-radius 260ms ease;
-}
-.navegacao ul li:hover {
-  background-color: #ff8c002b;
-  border-radius: 50px;
-}
-header button {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  display: none;
-  width: 2rem;
-}
-.gaveta-navegacao {
-  height: 89vh;
-}
-.gaveta-navegacao ul {
-  height: 35vh;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-block: 1px solid #2125291e;
-  list-style: none;
-}
-.gaveta-navegacao section {
-  display: flex;
-  height: 40vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  gap: 15px 0;
-}
-
 /* --------------------------------------- */
 
 main section {
@@ -418,33 +323,7 @@ footer figure img:hover {
 }
 
 @media(max-width: 935px) {
-  header {
-    position: sticky;
-    top: 0;
-    margin: 0 0;
-    padding: 0 1.5rem;
-    border-radius: 0;
-  }
-  .navegacao {
-    display: none;
-  }
-  header div:nth-child(3) {
-    display: none;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 1.25rem;
-  }
-  p, h3{
-    font-size: 1rem;
-  }
-  header button {
-    display: block;
-    color: #212529;
-    cursor: pointer;
-  }
+  
   .eu::before {
     font-size: .8em;
     width: 8rem;

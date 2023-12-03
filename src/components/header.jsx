@@ -15,17 +15,160 @@ const GlobalStyle = createGlobalStyle`
         font-family: Raleway, sans-serif;
         color: #212529;
     }
+    html {
+        scroll-behavior: smooth;
+    }
     body {
         background-color: #fff;
     }
     a {
         text-decoration: none;
     }
+    h2 {
+        font-size: 1.85rem;
+    }
+
+    @media(max-width: 935px) {
+        h1 {
+            font-size: 3rem;
+          }
+          h2 {
+            font-size: 1.25rem;
+          }
+          p, h3{
+            font-size: 1rem;
+          }
+    }
 `
 const HeaderEstilo = styled.header `
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 28px;
+    position: fixed;
+    padding: 0 1.75rem;
+    box-shadow: 0 0 3px #212529;
+    left: 0;
+    right: 0;
+    z-index: +2;
+    font-weight: 600;
 
+    section {
+        height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2 {
+        cursor: pointer;
+    }
+    span {
+        color: rgb(255, 140, 0);
+    }
+
+
+    @media(max-width: 935px) {
+        position: sticky;
+        top: 0;
+        margin: 0 0;
+        padding: 0 1.5rem;
+        border-radius: 0;
+    }
+`
+const Nav = styled.nav `
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    li {
+        padding: .65rem 1.25rem;
+        cursor: pointer;
+        transition: background-color .1s ease, border-radius 260ms ease;
+
+        &:hover {
+            background-color: #ff8c002b;
+            border-radius: 50px;
+        }
+    }
+
+    @media(max-width: 935px) {
+        display: none;
+    }
 `
 
+const AreaCurriculo = styled.article `
+    justify-content: end;
+    display: flex;
+    align-items: center;
+
+    figure {
+        display: flex;
+        width: 5rem;
+        justify-content: space-around;
+        padding-right: .5rem;
+    }
+    
+    @media(max-width: 935px) {
+        display: none;
+    }
+`
+const Curriculo = styled.a `
+
+    background-color: #FF8c00;
+    border-radius: 50px;
+    color: #fff;
+    padding: .65rem 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+`
+
+const Icone = styled.img `
+    cursor: pointer;
+
+    &:hover {
+    transform: translate(0, -1px);
+    }
+`
+const MenuHamburger = styled.button `
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    display: none;
+    width: 2rem;
+
+    @media(max-width: 935px) {
+        display: block;
+        color: #212529;
+        cursor: pointer;
+    }
+`
+
+const GavetaNavegacao = styled.nav `
+
+    height: 89vh;
+
+    ul {
+        height: 35vh;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-block: 1px solid #2125291e;
+        list-style: none;
+    }
+    section {
+        display: flex;
+        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 15px 0;
+    }
+    figure {
+        display: flex;
+        gap: 0 15px;
+    }
+`
 export default function Header() {
 
     const [mudar, SetMudar] = useState(false)
@@ -39,7 +182,7 @@ export default function Header() {
                         &lt; Rafael D-S <span>/</span>&gt;
                     </h2>
                 </div>
-                <nav className='navegacao'>
+                <Nav className='navegacao'>
                     <ul>
                         <a href="#sobre">
                             <li>
@@ -62,19 +205,19 @@ export default function Header() {
                             </li>
                         </a>
                     </ul>
-                </nav>
-                <div>
+                </Nav>
+                <AreaCurriculo>
                     <figure>
-                        <img src={Pt} alt="português" />
-                        <img src={Eng} alt="english" />
+                        <Icone src={Pt} alt="português" />
+                        <Icone src={Eng} alt="english" />
                     </figure>
-                    <a href="../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
+                    <Curriculo href="../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
                         Currículo
-                    </a>
-                </div>
-                <button onClick={() => SetMudar(!mudar) }>
+                    </Curriculo>
+                </AreaCurriculo>
+                <MenuHamburger onClick={() => SetMudar(!mudar) }>
                     ≡
-                </button>
+                </MenuHamburger>
             </section>
         {mudar && <Navegacao SetMudar={SetMudar} mudar={mudar}/>}
         </HeaderEstilo>
@@ -85,7 +228,7 @@ function Navegacao({SetMudar, mudar}) {
 
     // onClick={() => SetMudar(!mudar)}
     return (
-        <nav className='gaveta-navegacao'>
+        <GavetaNavegacao>
                     <ul>
                         <a href="#sobre" onClick={() => SetMudar(!mudar)}>
                             <li>
@@ -110,24 +253,24 @@ function Navegacao({SetMudar, mudar}) {
                     </ul>
             <section>
                 <figure>
-                        <img src={Pt} alt="português" />
-                        <img src={Eng} alt="english" />
+                        <Icone src={Pt} alt="português" />
+                        <Icone src={Eng} alt="english" />
                 </figure>
-                <a a href="../../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
+                <Curriculo a href="../../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
                     Curriculo
-                </a>
-                <figure className='separar'>
+                </Curriculo>
+                <figure>
                     <a href="https://github.com/RafaelD-S" target='_blank'>
-                        <img src={GitHub} alt="github" />
+                        <Icone src={GitHub} alt="github" />
                     </a>
                     <a href="https://www.linkedin.com/in/rafaeld-s/" target='_blank'>
-                        <img src={Linkedin} alt="linkedin" />
+                        <Icone src={Linkedin} alt="linkedin" />
                     </a>
                     <a href="https://www.instagram.com/skellybur/" target='blank_'>
-                        <img src={Instagram} alt="instagram" />
+                        <Icone src={Instagram} alt="instagram" />
                     </a>
                 </figure>
             </section>
-        </nav>
+        </GavetaNavegacao>
     )
 }
