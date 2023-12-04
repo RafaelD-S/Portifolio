@@ -8,8 +8,12 @@ export default function Footer() {
             <h2>
                 Contatos
             </h2>
-                <h3>&#40;+55&#41; 71 99953-8584</h3>
+                
+                <a href="https://wa.link/jsp4n9" target='blank_'>
+                    <h3>&#40;+55&#41; 71 99953-8584</h3>
+                </a>
                 <h3>rafaeldsilva.pf@gmail.com</h3>
+
                 <figure>
                     <a href="https://www.linkedin.com/in/rafaeld-s/" target='blank_'>
                         <img src={Linkedin} alt="" />
