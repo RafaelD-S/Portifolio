@@ -45,10 +45,10 @@ export default function Header() {
                     </ul>
                 </S.Nav>
                 <S.AreaCurriculo>
-                    <figure>
+                    {/* <figure>
                         <S.Icone src={Pt} alt="português" />
                         <S.Icone src={Eng} alt="english" />
-                    </figure>
+                    </figure> */}
                     <S.Curriculo href="../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" target='blank_'>
                         Currículo
                     </S.Curriculo>
