@@ -24,6 +24,9 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
+    h1 {
+        font-size: 4rem;
+    }
     h2 {
         font-size: 1.85rem;
     }
