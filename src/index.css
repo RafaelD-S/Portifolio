@@ -1,11 +1,3 @@
-/* 
-  Laranja: #F49C1B
-  Laranja Apagado: #ff8c002b
-  Branco: #ffffff
-  Preto: #212529
-
-*/
-
 @keyframes luz {
   0% {
     background-color: lime;
@@ -20,40 +12,3 @@
     box-shadow: 0 0 5px lime;
   }
 }
-
-
-/* --------------------- */
-
-footer {
-  background-color: #212529;
-  color: #fff;
-  padding: 2rem 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-footer * {
-  color: #fff;
-}
-footer h3 {
-  font-weight: normal;
-  letter-spacing: 1px;
-  color: #FF8c00;
-}
-footer figure {
-  border-radius: 15px;
-  display: flex;
-  width: fit-content;
-  overflow: hidden;
-}
-footer figure img {
-  background-color: #FF8c00;
-  padding: .5rem 1rem;
-  cursor: pointer;
-  border: 1px solid #212529;
-}
-footer figure img:hover {
-  opacity: .8;
-}
-
