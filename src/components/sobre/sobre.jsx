@@ -1,60 +1,12 @@
-import { styled } from 'styled-components'
-import Programador from '../assets/coder.png'
+import Programador from '../../assets/coder.png'
 import {Fade} from 'react-awesome-reveal'
-import NuvemBackground from '../assets/background-sobre.png'
 
-const SobreSection = styled.section `
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7rem 1.5rem 5rem 1.5rem;
-    background-image: url(${NuvemBackground});
-    background-size: 100%;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-
-    h2 {
-         padding: 1rem 0;
-    }
-    p {
-        max-width: 40rem;
-        padding: .5rem 0;
-        font-size: 1.15rem;
-    }
-`
-
-const Linha = styled.div `
-
-    background-color: #ff8c002b;
-    height: 12rem;
-    padding: .075rem;
-    margin-top: 3rem;
-
-`
-const SobreContainer = styled.article `
-
-    display: flex;
-    border-left: 2px solid #ff8c002b;
-    border-radius: 10px;
-    padding-left: 1.5rem;
-    padding-block: .5rem;
-
-    figure {
-        padding-left: 4rem;
-    }
-    @media(max-width: 935px) {
-
-        figure {
-          display: none;
-        }
-    }
-`
+import * as S from './sobreStyle'
 
 export default function Sobre() {
     return (
-        <SobreSection id='sobre'> 
-            <SobreContainer>
+        <S.SobreSection id='sobre'> 
+            <S.SobreContainer>
             <Fade direction='left' fraction={.6} triggerOnce>
                 <div>
                     <h2>
@@ -73,9 +25,9 @@ export default function Sobre() {
                     <img src={Programador} alt="" />
                 </figure>
             </Fade>
-            </SobreContainer>
-            <Linha>
-            </Linha>
-        </SobreSection>
+            </S.SobreContainer>
+            <S.Linha>
+            </S.Linha>
+        </S.SobreSection>
     )
 }

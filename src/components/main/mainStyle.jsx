@@ -1,10 +1,6 @@
-import { styled } from "styled-components"
-import FotoPessoal from '../assets/foto-rosto.png'
-import Instagram from '../assets/instagram.png'
-import Linkedin from '../assets/linkedin.png'
-import GitHub from '../assets/github.png'
+import styled  from "styled-components"
 
-const MainSection = styled.main `
+export const MainSection = styled.main `
 
     display: flex;
     position: relative;
@@ -46,7 +42,7 @@ const MainSection = styled.main `
     }
 `
 
-const BotaoDescer = styled.button `
+export const BotaoDescer = styled.button `
 
     cursor: pointer;
     font-size: 1.5rem;
@@ -66,7 +62,7 @@ const BotaoDescer = styled.button `
 
 `
 
-const ImagemPessoal = styled.figure `
+export const ImagemPessoal = styled.figure `
 
     position: relative;
 
@@ -118,34 +114,3 @@ const ImagemPessoal = styled.figure `
         }
     }
 `
-export default function Main() {
-    return (
-            <MainSection>
-                <article>
-                        <h1>
-                            Rafael Dantas
-                        </h1>
-                        <h2>
-                            Front-End Developer
-                        </h2>
-                        <figure>
-                            <a href="https://www.linkedin.com/in/rafaeld-s/" target="blank_">
-                                <img src={Linkedin} alt="linkedin" />
-                            </a>
-                            <a href="https://github.com/RafaelD-S" target="blank_">
-                                <img src={GitHub} alt="github" />
-                            </a>
-                            <a href="https://www.instagram.com/skellybur/" target="blank_">
-                                <img src={Instagram} alt="instagram" />
-                            </a>
-                        </figure>
-                </article>
-                <ImagemPessoal>
-                    <img src={FotoPessoal} alt="Foto de rosto Rafael Dantas"/>
-                </ImagemPessoal>
-                <BotaoDescer onClick={() => window.scrollTo({top: 500, behavior: "smooth"})}>
-                    ⮟
-                </BotaoDescer>
-            </MainSection>
-    )
-}
