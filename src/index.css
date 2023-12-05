@@ -23,42 +23,6 @@
 
 
 /* ---------------------- */
-.sobre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 7rem 1.5rem 5rem 1.5rem;
-  background-image: url(./assets/background-sobre.png);
-  background-size: 100%;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-}
-.sobre article {
-  display: flex;
-  border-left: 2px solid #ff8c002b;
-  border-radius: 10px;
-  padding-left: 1.5rem;
-  padding-block: .5rem;
-}
-.sobre article figure {
-  padding-left: 4rem;
-}
-.sobre h2 {
-  padding: 1rem 0;
-}
-.sobre p {
-  max-width: 40rem;
-  padding: .5rem 0;
-  font-size: 1.15rem;
-}
-.linha {
-  background-color: #2125291e;
-  height: 12rem;
-  padding: .075rem;
-  margin-top: 3rem;
-}
-
-/* ---------------------- */
 .conhecimento {
   background-color: #ff8c002b;
   border-block: 3px solid #2125291e;
@@ -240,11 +204,6 @@ footer figure img:hover {
 
 @media(max-width: 935px) {
 
-  /* -------------- */
-  .sobre article figure {
-    display: none;
-  }
-  /* ---------------- */
   .tecnologias {
     bottom: 0;
   }
