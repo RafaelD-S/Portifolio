@@ -179,13 +179,13 @@ export default function Header() {
         <>
         <GlobalStyle/>
         <HeaderEstilo>
-            <section className='header-container'>
+            <section>
                 <div>
                     <h2 onClick={() => window.scrollTo({top:0})}>
                         &lt; Rafael D-S <span>/</span>&gt;
                     </h2>
                 </div>
-                <Nav className='navegacao'>
+                <Nav>
                     <ul>
                         <a href="#sobre">
                             <li>
@@ -214,7 +214,7 @@ export default function Header() {
                         <Icone src={Pt} alt="português" />
                         <Icone src={Eng} alt="english" />
                     </figure>
-                    <Curriculo href="../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
+                    <Curriculo href="../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" target='blank_'>
                         Currículo
                     </Curriculo>
                 </AreaCurriculo>
@@ -259,7 +259,7 @@ function Navegacao({SetMudar, mudar}) {
                         <Icone src={Pt} alt="português" />
                         <Icone src={Eng} alt="english" />
                 </figure>
-                <Curriculo a href="../../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" className='curriculo' target='blank_'>
+                <Curriculo a href="../../public/CURRÍCULO_RAFAEL_DANTAS_SILVA.pdf" target='blank_'>
                     Curriculo
                 </Curriculo>
                 <figure>

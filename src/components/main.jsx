@@ -120,7 +120,7 @@ const ImagemPessoal = styled.figure `
 `
 export default function Main() {
     return (
-            <MainSection className="main-section">
+            <MainSection>
                 <article>
                         <h1>
                             Rafael Dantas
@@ -140,10 +140,10 @@ export default function Main() {
                             </a>
                         </figure>
                 </article>
-                <ImagemPessoal className="eu">
-                    <img src={FotoPessoal} alt="Foto de rosto Rafael Dantas" className="rosto"/>
+                <ImagemPessoal>
+                    <img src={FotoPessoal} alt="Foto de rosto Rafael Dantas"/>
                 </ImagemPessoal>
-                <BotaoDescer className="descer" onClick={() => window.scrollTo({top: 500, behavior: "smooth"})}>
+                <BotaoDescer onClick={() => window.scrollTo({top: 500, behavior: "smooth"})}>
                     ⮟
                 </BotaoDescer>
             </MainSection>
