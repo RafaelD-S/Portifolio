@@ -49,7 +49,7 @@ export default function Header() {
                         <S.Icone src={Pt} alt="português" />
                         <S.Icone src={Eng} alt="english" />
                     </figure> */}
-                    <S.Curriculo href="../../../public/CURRICULO_RAFAEL_DANTAS_SILVA.pdf" target='blank_'>
+                    <S.Curriculo href="../../../public/CURRICULO_RAFAEL_DANTAS_SILVA.pdf" target='_blank'>
                         Currículo
                     </S.Curriculo>
                 </S.AreaCurriculo>
@@ -94,7 +94,7 @@ function Navegacao({SetMudar, mudar}) {
                         <S.Icone src={Pt} alt="português" />
                         <S.Icone src={Eng} alt="english" />
                 </figure>
-                <S.Curriculo a href="../../../public/CURRICULO_RAFAEL_DANTAS_SILVA.pdf" target='blank_'>
+                <S.Curriculo a href="../../../public/CURRICULO_RAFAEL_DANTAS_SILVA.pdf" target='_blank'>
                     Curriculo
                 </S.Curriculo>
                 <figure>
