@@ -90,10 +90,10 @@ function Navegacao({SetMudar, mudar}) {
                         </a>
                     </ul>
             <section>
-                <figure>
+                {/* <figure>
                         <S.Icone src={Pt} alt="português" />
                         <S.Icone src={Eng} alt="english" />
-                </figure>
+                </figure> */}
                 <S.Curriculo a href="/CURRICULO_RAFAEL_DANTAS_SILVA.pdf" target='_blank'>
                     Curriculo
                 </S.Curriculo>
