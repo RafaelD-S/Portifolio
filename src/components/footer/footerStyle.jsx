@@ -17,6 +17,7 @@ export const Contato = styled.footer `
         font-weight: normal;
         letter-spacing: 1px;
         color: #FF8c00;
+        font-size: 1.125rem;
     }
 `
 

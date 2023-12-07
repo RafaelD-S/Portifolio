@@ -1,3 +1,4 @@
+import Link from '../../assets/external-link.png'
 import styled from 'styled-components'
 
 export const ProjetosSection = styled.section `
@@ -20,15 +21,15 @@ export const AreaCards = styled.div `
     gap: 2rem 0;
 
     img {
-        height: 16rem;
+        height: 15rem;
         opacity: .4;
         border-bottom: none;
         transition: opacity .3s ease, transform .3s ease;
-        transform: scale(1.3);
+        transform: scale(1.2);
 
         &:hover {
             opacity: .9;
-            transform: scale(1.1);
+            transform: scale(1);
         }
     }
 
@@ -36,7 +37,7 @@ export const AreaCards = styled.div `
 
 export const CardProjetos = styled.div `
 
-    max-width: 28rem;
+    max-width: 24rem;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 3px black;
@@ -78,30 +79,32 @@ export const CardAreaTexto = styled.div `
     flex-wrap: wrap;
     border-radius: 0 0 5px 5px;
 
-    * {
+    h3 {
         color: #fff;
+        padding: .5rem .5rem .5rem .35rem;
     }
     div {
         display: flex;
         gap: 0 10px;
-        margin-top: .5rem;
+        height: 100%;
     }
     a {
+        color: #fff;
         border: none;
         background-color: #FF8c00;
+        font-size: .8rem;
         padding: .5rem 1rem;
         border-radius: 50px;
         font-weight: 600;
         cursor: pointer;
 
         &:nth-child(1) {
-           export  background-color: #fff;
+            background-color: #fff;
             color: #212529;
         }
     }
 `
 
-import Link from '../../assets/external-link.png'
 
 export const Tecnologias = styled.figcaption `
 
@@ -109,6 +112,7 @@ export const Tecnologias = styled.figcaption `
     background-color: #212529;
     color: #fff;
     border-bottom: 2px solid #ffffff21;
+    font-size: .8rem;
     bottom: 0;
     font-weight: bold;
     left: 0;
@@ -124,6 +128,5 @@ export const Tecnologias = styled.figcaption `
 
     @media(max-width: 935px) {
         bottom: 0;
-        font-size: .9rem;
     }
 `

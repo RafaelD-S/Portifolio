@@ -18,7 +18,6 @@ export const SobreSection = styled.section `
     p {
         max-width: 40rem;
         padding: .5rem 0;
-        font-size: 1.15rem;
     }
 `
 

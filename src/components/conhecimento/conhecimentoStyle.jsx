@@ -34,6 +34,7 @@ export const AreaCards = styled.section `
     div {
         background-color: #fff;
         display: flex;
+        align-items: center;
         padding: 1rem;
         gap: 0 10px;
         box-shadow: 0 0 5px gray;

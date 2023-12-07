@@ -28,6 +28,11 @@ export const MainSection = styled.main `
         display: flex;
         justify-content: space-around;
         gap: 10px;
+        align-items: flex-start;
+        
+        a {
+            display: flex;
+        }
     }
 
     @media(max-width: 925px) {

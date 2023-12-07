@@ -19,21 +19,21 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 3.25rem;
     }
     h2 {
-        font-size: 1.85rem;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
     }
 
     @media(max-width: 935px) {
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
           }
-          h2 {
+        h2 {
             font-size: 1.25rem;
-          }
-          p, h3{
-            font-size: 1rem;
           }
     }
 `
