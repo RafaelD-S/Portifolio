@@ -18,7 +18,7 @@ export const AreaCards = styled.div `
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 2rem 0;
+    gap: 2rem 8px;
 
     img {
         height: 15rem;
