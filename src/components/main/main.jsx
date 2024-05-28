@@ -1,7 +1,7 @@
 import FotoPessoal from '../../assets/foto-rosto.png'
-import Instagram from '../../assets/instagram.png'
-import Linkedin from '../../assets/linkedin.png'
-import GitHub from '../../assets/github.png'
+import Instagram from '../../assets/icons/instagram.png'
+import Linkedin from '../../assets/icons/linkedin.png'
+import GitHub from '../../assets/icons/github.png'
 
 import * as S from './mainStyle.jsx'
 

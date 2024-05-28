@@ -1,13 +1,13 @@
 import { useState } from "react"
-import Git from '../../assets/git.png'
-import Github from '../../assets/github.png'
-import Html from '../../assets/html.png'
-import Css from '../../assets/css.png'
-import Js from '../../assets/js.png'
-import React from '../../assets/react.png'
-import Sass from '../../assets/sass.png'
-import Figma from '../../assets/figma.png'
-import StyledImg from '../../assets/styled-components.png'
+import Git from '../../assets/icons/git.png'
+import Github from '../../assets/icons/github.png'
+import Html from '../../assets/icons/html.png'
+import Css from '../../assets/icons/css.png'
+import Js from '../../assets/icons/js.png'
+import React from '../../assets/icons/react.png'
+import Sass from '../../assets/icons/sass.png'
+import Figma from '../../assets/icons/figma.png'
+import StyledImg from '../../assets/icons/styled-components.png'
 
 import {Fade} from 'react-awesome-reveal'
 

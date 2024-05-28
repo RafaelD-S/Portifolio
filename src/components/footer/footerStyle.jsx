@@ -4,12 +4,18 @@ export const Contato = styled.footer `
 
     background-color: #212529;
     color: #fff;
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    justify-content: space-around;
+    gap: 1.5rem 4rem;
+    flex-wrap: wrap;
 
+    div {
+      display: grid;
+      text-align: center;
+      gap: 8px;
+    }
     * {
         color: #fff;
     }
@@ -28,10 +34,9 @@ export const AreaContatos = styled.figure `
     overflow: hidden;
 
   img {
-    background-color: #FF8c00;
-    padding: .5rem 1rem;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(81%) saturate(552%) hue-rotate(355deg) brightness(91%) contrast(99%);
+    padding: .5rem;
     cursor: pointer;
-    border: 1px solid #212529;
 
   &:hover {
     opacity: .8;

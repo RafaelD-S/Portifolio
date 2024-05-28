@@ -1,15 +1,14 @@
-import Pt from '../../assets/brasil.png'
-import Eng from '../../assets/estados-unidos.png'
-import GitHub from '../../assets/github.png'
-import Linkedin from '../../assets/linkedin.png'
-import Instagram from '../../assets/instagram.png'
+import Pt from '../../assets/icons/brasil.png'
+import Eng from '../../assets/icons/estados-unidos.png'
+import GitHub from '../../assets/icons/github.png'
+import Linkedin from '../../assets/icons/linkedin.png'
+import Instagram from '../../assets/icons/instagram.png'
 import { useState } from 'react'
 
 import * as S from './headerStyle.jsx'
 
-
 export default function Header() {
-
+    
     const [mudar, SetMudar] = useState(false)
     return (
         <>

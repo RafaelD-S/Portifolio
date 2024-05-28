@@ -3,20 +3,18 @@ import styled  from "styled-components"
 export const HeaderEstilo = styled.header `
     background-color: #fff;
     margin: 1rem;
-    border-radius: 28px;
+    border-radius: 3rem;
     position: fixed;
-    padding: 0 1.75rem;
+    padding: .75rem 2.5rem;
     box-shadow: 0 0 3px #212529;
     left: 0;
     right: 0;
     z-index: +2;
-    font-weight: 600;
 
     section {
-        height: 11vh;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;}
     }
     h2 {
         cursor: pointer;
@@ -30,7 +28,7 @@ export const HeaderEstilo = styled.header `
         position: sticky;
         top: 0;
         margin: 0 0;
-        padding: 0 1.5rem;
+        padding: 1rem;
         border-radius: 0;
     }
 `
