@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Naruto from '../../assets/Projetos/naruto.png'
 import Calculadora from '../../assets/Projetos/calculadora.png'
 import Rpg from '../../assets/Projetos/rpg.png'
-import Contador from '../../assets/Projetos/contador.png'
-import Fantastika from '../../assets/Projetos/fantastika.png'
-import Blogames from '../../assets/Projetos/blogames.png'
+import gamerHub from '../../assets/Projetos/gamerHub.png'
+import Ecommerce from '../../assets/Projetos/e-commerce.png'
+import NewsHomepage from '../../assets/Projetos/news-homepage.png'
 
 import {Fade} from 'react-awesome-reveal'
 
@@ -19,15 +19,15 @@ export default function Projetos() {
             alt: 'Site usando a API do Naruto',
             github: 'https://github.com/RafaelD-S/Naruto-API',
             deploy: 'https://naruto-api-alpha.vercel.app',
-            tecnologias: 'React | Sass | Axios | React-Router-Dom'
+            tecnologias: 'React Js | Sass | Axios | React-Router-Dom'
         },
         {
-            nome: 'Calculadora React',
+            nome: 'Calculadora Game',
             imagem: Calculadora,
             alt: 'Site de uma calculadora utilizando React',
             github: 'https://github.com/RafaelD-S/Calculadora-React',
             deploy: 'https://calculadora-simples-nu.vercel.app',
-            tecnologias: 'React | Styled-Components'
+            tecnologias: 'React Js | Styled-Components'
         },
         {
             nome: 'Projeto RPG',
@@ -38,27 +38,27 @@ export default function Projetos() {
             tecnologias: 'HTML | CSS | JavaScript'
         },
         {
-            nome: 'Contador Multicor',
-            imagem: Contador,
-            alt: 'Contador de 1 a 10 feito em React',
-            github: 'https://github.com/RafaelD-S/Contador-Multicor',
-            deploy: 'https://contador-multicor.vercel.app',
-            tecnologias: 'React | CSS'
+            nome: 'GamerHubD-S',
+            imagem: gamerHub,
+            alt: 'Site de jogos simples em JavaScript',
+            github: 'https://github.com/RafaelD-S/GamerHubD-S',
+            deploy: 'https://gamerhub-d-s.vercel.app',
+            tecnologias: 'React Js | Sass | React-Router-Dom'
         },
         {
-            nome: 'Desafio Fantastika',
-            imagem: Fantastika,
-            alt: 'Site desafio do curso front-end Vai na Web',
-            github: 'https://github.com/RafaelD-S/Fantastika',
-            deploy: 'https://rafaeld-s.github.io/Fantastika/',
-            tecnologias: 'HTML | CSS'
+            nome: 'E-commerce page',
+            imagem: Ecommerce,
+            alt: 'Pagina de E-commerce',
+            github: 'https://github.com/RafaelD-S/Ecomerce-Product-Page',
+            deploy: 'https://rafaeld-s.github.io/Ecomerce-Product-Page/',
+            tecnologias: 'HTML | CSS | JavaScript'
         },
         {
-            nome: 'Blogames',
-            imagem: Blogames,
-            alt: 'Site parte dos templates desenvolvidos pela Codêlandia',
-            github: 'https://github.com/RafaelD-S/Blogames',
-            deploy: 'https://rafaeld-s.github.io/Blogames/',
+            nome: 'News Homepage',
+            imagem: NewsHomepage,
+            alt: 'Pagina de noticias',
+            github: 'https://github.com/RafaelD-S/News-Homepage',
+            deploy: 'https://rafaeld-s.github.io/News-Homepage/',
             tecnologias: 'HTML | CSS'
         },
     ])
@@ -69,7 +69,7 @@ export default function Projetos() {
                 Projetos
             </h2>
             <p>
-                Veja um pouco dos meus projetos e as tecnologias em que usei neles.
+                Veja alguns dos meus projetos e as tecnologias em que usei neles.
             </p>
             <Fade duration={1000} triggerOnce>
             <S.AreaCards>

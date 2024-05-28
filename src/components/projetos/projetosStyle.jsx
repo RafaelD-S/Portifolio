@@ -1,4 +1,4 @@
-import Link from '../../assets/external-link.png'
+import Link from '../../assets/icons/external-link.png'
 import styled from 'styled-components'
 
 export const ProjetosSection = styled.section `
