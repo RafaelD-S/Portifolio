@@ -31,9 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     @media(max-width: 935px) {
         h1 {
             font-size: 2.5rem;
-          }
-        h2 {
-            font-size: 1.25rem;
-          }
+        }
     }
 `
