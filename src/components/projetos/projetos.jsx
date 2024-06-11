@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Naruto from '../../assets/Projetos/naruto.png'
 import Calculadora from '../../assets/Projetos/calculadora.png'
-import Rpg from '../../assets/Projetos/rpg.png'
-import gamerHub from '../../assets/Projetos/gamerHub.png'
+import QueAula from '../../assets/Projetos/queAula.png'
+import GamerHub from '../../assets/Projetos/gamerHub.png'
 import Ecommerce from '../../assets/Projetos/e-commerce.png'
 import NewsHomepage from '../../assets/Projetos/news-homepage.png'
 
@@ -30,16 +30,16 @@ export default function Projetos() {
             tecnologias: 'React Js | Styled-Components'
         },
         {
-            nome: 'Projeto RPG',
-            imagem: Rpg,
-            alt: 'Site de RPG feito em html, css e js',
-            github: 'https://github.com/RafaelD-S/RPG-Project',
-            deploy: 'https://rafaeld-s.github.io/RPG-Project/',
-            tecnologias: 'HTML | CSS | JavaScript'
+            nome: 'Que Aula?',
+            imagem: QueAula,
+            alt: 'Site de aulas para o curso ADS do IFBA',
+            github: 'https://github.com/RafaelD-S/Que-Aula',
+            deploy: 'https://que-aula.vercel.app',
+            tecnologias: 'React Js | Sass'
         },
         {
             nome: 'GamerHubD-S',
-            imagem: gamerHub,
+            imagem: GamerHub,
             alt: 'Site de jogos simples em JavaScript',
             github: 'https://github.com/RafaelD-S/GamerHubD-S',
             deploy: 'https://gamerhub-d-s.vercel.app',
