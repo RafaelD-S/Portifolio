@@ -1,14 +1,14 @@
 @keyframes luz {
   0% {
-    background-color: lime;
-    box-shadow: 0 0 5px lime;
+    background-color: red;
+    box-shadow: 0 0 5px red;
   }
   50% {
-    background-color: green;
+    background-color: darkred;
     box-shadow: none;
   }
   100% {
-    background-color: lime;
-    box-shadow: 0 0 5px lime;
+    background-color: red;
+    box-shadow: 0 0 5px red;
   }
 }
